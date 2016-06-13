@@ -1,7 +1,7 @@
 {
   "name": "ndarray-freqz",
   "version": "1.0.0",
-  "description": "Frequency Response of a given z-transformed Transfer function",
+  "description": "Frequency Response of a z-transformed Transfer function",
   "main": "lib/index.js",
   "scripts": {
     "test": "node test/test.js"

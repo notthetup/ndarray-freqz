@@ -52,7 +52,7 @@ Compute the frequency response of a digital filter based on it's transfer functi
 
 * `b` __Array/ndarray__ of the numerator polynomial coefficients of the filter transfer function.
 * `a` __Array/ndarray__ of the denominator polynomial coefficients of the filter transfer function.
-* `omega` __Array/ndarray__ of frequency (in radians/sample) values to calculate the frequency response for. If the value is a __Number__, then frequency response will be calculated for that many frequencies equally spaced around the unit circle. If __undefined__ then frequency response will be calculated at 512 frequencies equally spaced around the unit circle.
+* `omega` Optional __Array/ndarray__ of frequency (in radians/sample) values to calculate the frequency response for. If the value is a __Number__, then frequency response will be calculated for that many frequencies equally spaced around the unit circle. If __undefined__ then frequency response will be calculated at 512 frequencies equally spaced around the unit circle.
 
 **Returns** a object with following components
 
