@@ -2,24 +2,34 @@
   "name": "ndarray-freqz",
   "version": "1.0.0",
   "description": "Frequency Response of a given z-transformed Transfer function",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/test.js"
   },
   "keywords": [
     "filter",
     "ndarray",
     "frequency",
     "respose",
-    "freqz"
+    "freqz",
+    "scijs"
   ],
-  "devDependencies": {
-    "browserify": "^13.0.1",
-    "chart.js": "^2.1.5",
+  "dependencies": {
     "horner": "^1.0.0",
+    "isndarray": "^1.0.0",
     "ndarray": "^1.0.18",
-    "ndarray-complex": "^1.0.3"
-  }
+    "ndarray-complex": "^1.0.3",
+    "ndarray-fill": "^1.0.1",
+    "ndarray-ops": "^1.2.2",
+    "zeros": "^1.0.0"
+  },
   "author": "Chinmay Pendharkar",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "^4.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:notthetup/ndarray-freqz"
+  },
 }
