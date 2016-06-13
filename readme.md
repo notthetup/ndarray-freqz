@@ -5,7 +5,7 @@ Compute the frequency response of a digital filter based on it's transfer functi
 
 ## Introduction
 
-This [scijs](scijs.net) compatible module calculates the frequency response of a given transfer function, described by the coefficient of the numerator and denominator polynomials.
+This [scijs](http://scijs.net) compatible module calculates the frequency response of a given transfer function, described by the coefficient of the numerator and denominator polynomials.
 
 ```
 |           jw              -jw            -jmw
