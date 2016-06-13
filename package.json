@@ -37,5 +37,5 @@
     "type": "git",
     "url": "git@github.com:notthetup/ndarray-freqz"
   },
-  { "engines" : { "node" : ">=5.11.1" } }
+  "engines" : { "node" : ">=5.11.1" }
 }
