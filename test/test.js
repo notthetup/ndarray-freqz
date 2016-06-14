@@ -37,16 +37,16 @@ var omega_nd = ndarray(omega_array);
 
 // Known values for functional test;
 
-var a = [0.00685858, 0.00424427, 0.01363637, 0.00939893, 0.01363637,
+var b = [0.00685858, 0.00424427, 0.01363637, 0.00939893, 0.01363637,
   0.00424427, 0.00685858
 ]
 
-var b = [1., -3.6133816, 6.29949582, -6.44744259, 4.04658649, -1.4649745, 0.23927553]
+var a = [1., -3.6133816, 6.29949582, -6.44744259, 4.04658649, -1.4649745, 0.23927553]
 
 var omega = [0.1, 0.2, 0.3, 0.4, 0.5];
 
-var H_r = [0.9273833, 0.68302768, 0.304890954, -0.15711188, -0.6193361];
-var H_i = [0.3951480, 0.7326551, 0.95308707, 0.99499834, 0.79966865];
+var H_r = [0.91261570,0.68077424,0.30448503,-0.15483488,-0.60538384 ];
+var H_i = [-0.38885569,-0.7302379,-0.95181804,-0.98057834,-0.78165398];
 
 freqz(b_array, a_array);
 
@@ -130,9 +130,9 @@ tape("Function - IIR Filter", function(t) {
   t.doesNotThrow(function() {
     H = freqz(b, a, omega);
   });
-  t.ok(almostEqual(H.omega, ndarray(omega), 1e-6, 1e-6));
-  t.ok(almostEqual(H.H_r, ndarray(H_r), 1e-4, 1e-4));
-  t.ok(almostEqual(H.H_i, ndarray(H_i), 1e-4, 1e-4));
+  t.ok(almostEqual(H.omega, ndarray(omega), 1e-6, 1e-6), 'correct frequency vector');
+  t.ok(almostEqual(H.H_r, ndarray(H_r), 1e-6, 1e-6), 'correct real part');
+  t.ok(almostEqual(H.H_i, ndarray(H_i), 1e-6, 1e-6), 'correct imag part');
   t.end();
 });
 
